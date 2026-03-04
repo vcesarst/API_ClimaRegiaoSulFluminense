@@ -1,0 +1,31 @@
+cat > .gitignore << EOF
+# Ambiente virtual
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dados 
+*.csv
+*.parquet
+*.pkl
+dados_sul_fluminense_*.csv
+cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Ambiente
+.env
+*.log
+
+# Arquivos grandes 
+sul_fluminense_completo.parquet
+sul_fluminense_*.csv
+EOF
